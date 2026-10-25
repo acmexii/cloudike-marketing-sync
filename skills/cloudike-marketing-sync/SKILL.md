@@ -10,7 +10,7 @@ description: 클라우다이크 홈페이지 전체 콘텐츠의 PR·Git 변경�
 - 공식 브랜드 로고: [assets/cloudike-logo.png](assets/cloudike-logo.png). `https://cloudike.kr/`의 헤더에서 추출한 원본이며, 출처·확인일·크기·해시는 [출처 기록](assets/cloudike-logo-source.json)에 보관한다. 소개서 표지·본문 브랜드 영역 및 영상의 필요한 브랜드 표시에 이 자산을 재사용한다. 원본 비율·색·투명도를 유지하고 작은 원본을 과도하게 확대하지 않는다. 텍스트로 로고를 재현하거나 템플릿의 MSASchool·유엔진 로고를 Cloudike 로고 대신 쓰지 않는다. 공식 로고 변경이 확인되면 새 자산과 교체 범위를 사전 승인안에 포함한다.
 - 저장소: https://github.com/acmexii/cloudikehome , 기준 브랜치 `main`. PR URL은 선택 입력이며, 저장소에서 대상 커밋에 연결된 PR을 자동 조회한다.
 - 작업공간의 `outputs/cloudike-marketing-sync/`에 실행 상태와 결과물을 관리한다. 최초에 기존 소개서를 검색하고 관리 대상을 연결한다. Drive 폴더가 미지정이면 연결된 도구로 후보를 확인하고 모호한 경우 선택받는다.
-- 문서 제작 전에 `artifact-template-msaschool-purple` 스킬과 그 디자인 규격·레이아웃 지도를 읽는다. 설치된 스킬을 찾고 없으면 의존성 누락을 알린다. 임의의 보라색 템플릿으로 대체하지 않는다. PPTX/PDF 실제 제작에는 Presentations 및 PDF 스킬의 검수 절차를 적용한다.
+- 문서 생성·수정 시마다 최신 `artifact-template-msaschool-purple` 스킬을 반드시 적용한다. `skill-slide-msaschool`은 배포 저장소 이름이며 실제 스킬 이름은 `artifact-template-msaschool-purple`이다. 제작 전 설치본과 배포 저장소 `https://github.com/acmexii/skill-slide-msaschool`의 현재 버전을 비교하고, 최신 `SKILL.md`, 디자인 규격·레이아웃 지도와 해당 문서 유형의 참조 이미지를 읽는다. 과거 실행의 지침·생성 스크립트·기억만으로 제작하지 않는다. 설치본이 오래됐으면 최신 지침·자산을 확인해 사용하되 로컬 수정은 자동 덮어쓰기하지 않는다. 스킬 누락·접근 실패로 최신 규격을 확인할 수 없으면 해당 문서 제작을 보류하고 원인을 알린다. 임의의 보라색 템플릿으로 대체하지 않는다. PPTX/PDF 실제 제작에는 Presentations 및 PDF 스킬의 검수 절차를 적용한다.
 - 영상 제작에는 형제 스킬 [cloudike-service-video](../cloudike-service-video/SKILL.md), [마우스 연출](../cloudike-service-video/references/interaction-motion.md), [ElevenLabs 설정](../cloudike-service-video/references/elevenlabs.md)을 읽고 재사용한다. 이 스킬에서는 대상 URL과 길이 20~40초를 우선한다. API·녹화 도구 지원은 실행 환경에서 확인한다.
 
 ## 필수 실행 순서
