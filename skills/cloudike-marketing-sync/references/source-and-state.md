@@ -29,6 +29,7 @@
 - last_inspected_commit: 자체 산출물 커밋 등 읽기 검사를 마친 위치. 완료 기준과 별개다.
 - product_snapshot: URL별 확인된 설명·수치·조건과 확인 시각
 - pending_run: 대상 커밋, 연결 PR 목록과 조회 상태, change_id별 변경 영향표, Diff 요약, 변경안 버전, 승인된 내용·범위·시각과 승인 메시지 참조, 실행 상태
+- document_review: 상태(`awaiting_document_review`, `changes_requested`, `confirmed`), 담당자에게 제시한 PPTX·PDF 버전과 경로, 검수 결과, 확인 메시지·시각. 문서 확인 후에만 영상 상태를 제작 중으로 전환한다. 문서 확인 대기 중에는 전체 완료 기준을 이동하지 않는다.
 - pr_submission: 상태(`not_applicable`, `awaiting_pr_submission_approval`, `approved`, `submitted`), 완료 안내한 결과물 버전·파일 목록, 대상 저장소·브랜치, 완료 안내 후 받은 승인 메시지·시각, 제출 PR URL. 제작 승인과 별도로 기록한다. 제출 승인 대기 중에는 완료 기준을 이동하지 않으며 자동 재개 시에도 승인 없이 푸시·PR 제출하지 않는다.
 - artifacts: 관리 중인 PPTX·PDF 경로, 홈페이지 다운로드 URL·반영 커밋과 단계별 성공 여부, 문서 Drive 폴더·파일 ID, 영상의 프로젝트 로컬 경로·원본 녹화 경로·대상 앱 URL·녹화한 변경 커밋, 영상의 로컬 검수 결과. 영상 Drive 업로드 및 홈페이지 게시는 수행하지 않으며 완료 조건에 포함하지 않는다. 과거 영상 Drive ID는 이력으로만 유지하고 새 업로드·갱신에 사용하지 않는다.
 
