@@ -1,6 +1,6 @@
 # Cloudike Marketing Sync
 
-클라우다이크 홈페이지의 Git·PR 변경을 확인하고 마케팅 팀 승인 후 소개서와 안내 영상을 최신화하는 스킬입니다.
+클라우다이크 앱 서비스의 Git·PR 변경을 확인하고 마케팅 팀 승인 후 소개서와 안내 영상을 최신화하는 스킬입니다.
 
 ## 설치
 
@@ -20,7 +20,9 @@ ElevenLabs API 키는 실행 환경에서 별도로 설정합니다. 키·개인
 홈페이지: https://acmexii.github.io/cloudikehome/  
 대상 저장소: https://github.com/acmexii/cloudikehome
 
-- 홈페이지 전체 콘텐츠의 PR·커밋 Diff 분석
+- 앱 서비스 전체 기능과 추가·변경 기능의 PR·커밋 Diff 분석
+- 소개서는 `/cloudikehome/app/`의 전체 기능을 다루며 홈페이지 홍보·랜딩 화면·요금·문의 콘텐츠는 제외
+- 홈페이지는 완성된 PDF의 소개자료 링크 게시·검증에만 사용
 - 변경이 없으면 “변경 된 사항이 없습니다.”로 종료
 - 대상 문서·페이지·변경/추가 내용을 먼저 제시하고 명시적 승인 후 실행
 - MSASchool 스타일 PPTX·PDF 생성 또는 갱신, Drive 기존 파일 업데이트
